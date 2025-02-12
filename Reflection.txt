@@ -6,3 +6,15 @@ The Matplotlib documentation is an essential resource for anyone looking to visu
 
 Beautiful Soup: Build a Web Scraper With Python – Real Python
 This guide provides a practical introduction to web scraping using Beautiful Soup, breaking down complex concepts into manageable steps. It explains how to navigate HTML structures, extract useful data, and handle common challenges like missing elements and encoding issues. The hands-on examples make it easy to follow along and apply the techniques to real-world projects. While web scraping requires careful consideration of website terms of service, this book helps readers understand ethical scraping practices. By the end, users gain confidence in automating data collection, making it a valuable skill for various data-driven applications.
+
+=================================================================================================================================================================================================================================================================================
+SANTOS, ORIN SAMUEL REFLECTION:
+Reflection on Fundamentals of Python: First Programs 
+The book by Lambert is a great way to learn Python for beginners. It explains basic programming ideas in a simple way, making it easy to follow. The examples are clear, and the exercises help build confidence in writing code. I like how it focuses on writing good programs from the start. The step-by-step approach makes it less scary for someone new to coding. It also covers different Python topics that are useful in real-world applications. Overall, it is a good book for learning the basics of Python.  
+
+Reflection on Getting Started — Matplotlib 3.8.0 Documentation 
+This guide is useful for understanding how to create graphs and visualizations in Python using Matplotlib. It explains how to install and use the library in a simple way. The examples are easy to follow, and they help in learning how to make different kinds of charts. I think this is helpful for people who want to turn data into visuals. The guide also shows different features, like labels and colors, which make the graphs better. It is a good resource for anyone who needs to present data clearly.  
+
+Reflection on Beautiful Soup: Build a Web Scraper With Python – Real Python
+This article explains how to use Beautiful Soup to collect information from websites. It shows how to install the library and use it to find and save data from web pages. The examples make it easy to understand, even for beginners. Web scraping is useful for collecting large amounts of data quickly, so this guide is very helpful. It also talks about being careful with website rules, which is important. Overall, this is a great resource for learning how to scrape web data using Python.
+=================================================================================================================================================================================================================================================================================
