@@ -30,3 +30,14 @@ The guide on Beautiful Soup offers a practical introduction to web scraping, bre
 
 Conclusion
 In conclusion, cleaning and processing basketball statistics is essential for accurate data analysis. By implementing the `cleanStats` function, we can efficiently separate "makes-attempts" values into meaningful columns, making the data easier to interpret and visualize. Running the script in PowerShell ensures a smooth workflow, allowing for automated data cleaning before further analysis. This process enhances statistical accuracy and supports better decision-making in sports analytics.
+
+
+
+
+
+PE5 Explanation:
+The `breadprice.py` program is designed to analyze and visualize the changes in bread prices over the years using Python. It starts by importing two important libraries, `pandas` and `matplotlib.pyplot`, which help in handling data and creating visual graphs. The program then loads a dataset from a CSV file using `pd.read_csv()`, storing it in a structure called a DataFrame, which is like a table. After loading the data, it calculates the average bread price for each year. This is done by selecting all the monthly price columns and using the `.mean(axis=1)` function to find the average price across all months for every year.
+
+Once the data is processed, the program generates a line graph to visually represent the price trend over the years. The `plt.figure(figsize=(10,5))` function sets the size of the graph, ensuring it is clear and readable. The `plt.plot()` function is then used to create the line, where the x-axis represents the years, and the y-axis represents the average bread price. The graph is further improved with markers at each data point to make it more readable, and a blue line is used to differentiate it from other potential graphs. The `plt.xlabel()`, `plt.ylabel()`, and `plt.title()` functions are added to label the axes and give the graph a proper title. Additionally, `plt.xticks(df["Year"])` ensures that all years are correctly displayed on the x-axis, while `plt.legend()` provides a label for the plotted line. The `plt.grid(True)` function adds grid lines to the background, making it easier to track values along the graph.
+
+Finally, the program displays the graph using `plt.show()`, allowing the user to see the visual representation of the price trends. To save the graph for later use, `plt.savefig("breadprice_plot.png")` is included, which stores the image in the same directory as the script. This ensures that users can keep a copy of the graph for reports or further analysis. Overall, this program is a simple yet powerful example of how Python can be used to analyze real-world data. By using only a few lines of code, it effectively processes, analyzes, and visualizes trends, making it useful for anyone looking to work with data without needing advanced programming skills.
