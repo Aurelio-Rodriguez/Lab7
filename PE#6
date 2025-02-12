@@ -1,1 +1,25 @@
+import pandas as pd
+
+def cleanStats(df):
+    """
+    Cleans the basketball statistics dataframe by splitting columns with "makes-attempts" format
+    into separate "makes" and "attempts" columns.
+    
+    Args:
+        df (pd.DataFrame): The original dataframe with FG, 3PT, and FT columns in "makes-attempts" format.
+    
+    Returns:
+        pd.DataFrame: The cleaned dataframe with separate columns for makes and attempts.
+    """
+    for col in ['FG', '3PT', 'FT']:
+        if col in df.columns:
+            # Split the column into two parts: makes and attempts
+            new_cols = df[col].str.split('-', expand=True)
+            df[col + 'M'] = pd.to_numeric(new_cols[0], errors='coerce')  # Makes
+            df[col + 'A'] = pd.to_numeric(new_cols[1], errors='coerce')  # Attempts
+            
+            # Drop the original column
+            df.drop(columns=[col], inplace=True)
+
+    return df
 
