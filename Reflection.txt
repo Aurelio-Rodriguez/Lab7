@@ -28,8 +28,11 @@ The Matplotlib 3.8.0 Documentation is an essential guide for learning how to vis
 Reflection on Beautiful Soup: Build a Web Scraper with Python
 The guide on Beautiful Soup offers a practical introduction to web scraping, breaking down complex concepts into easy-to-follow steps. It explains how to navigate HTML structures, extract relevant data, and handle common issues such as encoding errors and missing elements. The hands-on examples make it simple to apply these techniques to real-world scenarios while also emphasizing the ethical considerations of web scraping. By the end of the guide, users gain confidence in automating data collection and processing, making it a useful skill for various applications.
 
-Conclusion
-In conclusion, cleaning and processing basketball statistics is essential for accurate data analysis. By implementing the `cleanStats` function, we can efficiently separate "makes-attempts" values into meaningful columns, making the data easier to interpret and visualize. Running the script in PowerShell ensures a smooth workflow, allowing for automated data cleaning before further analysis. This process enhances statistical accuracy and supports better decision-making in sports analytics.
+Conclusion 
+Cleaning and processing basketball statistics is essential for accurate data analysis. The `cleanStats` function efficiently separates "makes-attempts" values into distinct columns for makes and attempts, making the data easier to interpret and visualize. Running the script in PowerShell allows for seamless data transformation, ensuring that the dataset is properly formatted before further analysis. This automated process improves statistical accuracy and supports better decision-making in sports analytics.  
+
+Code Explanation
+The `cleanStats` function is designed to clean a dataset by identifying columns containing "makes-attempts" values (such as `FG`, `3PT`, and `FT`). It splits each value into two separate numerical columns: one for successful makes and another for attempts. The function first checks if each target column exists in the dataset, converts its values into strings, and then uses the `.str.split('-')` method to separate the numbers. The new values are stored as numeric data (`pd.to_numeric`), and the original column is removed. The script also prompts the user for a CSV file, processes the data, and saves a cleaned version for further analysis. This approach ensures that basketball statistics are structured correctly, making them more useful for visualization and performance evaluation..
 
 
 
